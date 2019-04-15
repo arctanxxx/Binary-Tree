@@ -53,7 +53,6 @@ namespace PreInPosTraversal
             Console.Write(head.value + " ");
         }
 
-        // 前序非递归
         public static void preOrderUnRecure(Node head)
         {
             Console.Write("pre-order:");
@@ -80,7 +79,6 @@ namespace PreInPosTraversal
             if(head != null)
             {
                 Stack<Node> stack = new Stack<Node>();
-                stack.Push(head);
                 while (stack.Count != 0 || head != null)
                 {
                     if (head != null)
